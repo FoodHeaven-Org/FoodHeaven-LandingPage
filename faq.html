@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title data-i18n="faqp.meta.title">Preguntas frecuentes — FoodHeaven</title>
+<meta name="description" data-i18n="faqp.meta.desc" content="Todo lo que necesitas saber sobre cómo planificar tu semana, pagar, recibir tu comida y manejar tu cuenta en FoodHeaven." />
+<meta name="theme-color" content="#1f7a26" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/base.css" />
+<link rel="stylesheet" href="styles/layout.css" />
+<link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="FoodHeaven">
+      <img src="assets/logo.png" alt="" />
+      <span><em>Food</em>Heaven</span>
+    </a>
+
+    <nav class="nav-main" aria-label="Principal">
+      <a href="index.html#home" data-i18n="nav.home">Inicio</a>
+      <a href="index.html#how" data-i18n="nav.how">Cómo funciona</a>
+      <a href="index.html#menu" data-i18n="nav.menu">Menú</a>
+      <a href="index.html#plans" data-i18n="nav.plans">Planes</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="tools-wrap">
+      <div class="tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <div class="lang-flag" role="group" aria-label="Idioma">
+          <button data-lang="en" aria-pressed="false" aria-label="English">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <clipPath id="uk-c"><rect width="60" height="36"/></clipPath>
+                <rect width="60" height="36" fill="#012169"/>
+                <g clip-path="url(#uk-c)">
+                  <path d="M0 0 L60 36 M60 0 L0 36" stroke="#fff" stroke-width="6"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#fff" stroke-width="10"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#C8102E" stroke-width="6"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+          <button data-lang="es" aria-pressed="true" aria-label="Español">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <rect width="60" height="36" fill="#AA151B"/>
+                <rect y="9" width="60" height="18" fill="#F1BF00"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="index.html#home" data-i18n="nav.home">Inicio</a>
+  <a href="index.html#how" data-i18n="nav.how">Cómo funciona</a>
+  <a href="index.html#menu" data-i18n="nav.menu">Menú</a>
+  <a href="index.html#plans" data-i18n="nav.plans">Planes</a>
+  <a href="faq.html" data-i18n="nav.faq">Preguntas</a>
+  <a href="ayuda.html" data-i18n="foot.s2">Centro de ayuda</a>
+  <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+</div>
+
+<main class="container subpage">
+
+  <section class="subhero">
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span data-i18n="faqp.crumb">Preguntas frecuentes</span>
+    </div>
+    <h1 data-i18n="faqp.title">Preguntas frecuentes</h1>
+    <p data-i18n="faqp.lead">Reunimos las dudas más comunes y las respondimos en simple. Si te queda algo en el tintero, escríbenos.</p>
+  </section>
+
+  <nav class="faq-toc" aria-label="Categorías">
+    <a href="#start" data-i18n="faqp.toc.start">Empezar</a>
+    <a href="#plans" data-i18n="faqp.toc.plans">Planes y pagos</a>
+    <a href="#meals" data-i18n="faqp.toc.meals">Comidas y nutrición</a>
+    <a href="#delivery" data-i18n="faqp.toc.delivery">Entregas</a>
+    <a href="#account" data-i18n="faqp.toc.account">Tu cuenta</a>
+  </nav>
+
+  <section class="faq-category" id="start">
+    <h2>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+      <span data-i18n="faqp.cat.start">Empezar con FoodHeaven</span>
+    </h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.s1.q">¿Qué es FoodHeaven exactamente?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.s1.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.s2.q">¿Cómo empiezo?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.s2.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.s3.q">¿Necesito conocimientos de nutrición?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.s3.a"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-category" id="plans">
+    <h2>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+      <span data-i18n="faqp.cat.plans">Planes y pagos</span>
+    </h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.p1.q">¿Qué planes hay y cuánto cuestan?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.p1.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.p2.q">¿Puedo cambiar de plan?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.p2.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.p3.q">¿Cómo puedo pagar?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.p3.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.p4.q">¿Hay permanencia o contrato?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.p4.a"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-category" id="meals">
+    <h2>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2"/><path d="M5 2v20M16 2v20M16 8c0-3 3-6 3-6v20"/></svg></span>
+      <span data-i18n="faqp.cat.meals">Comidas y nutrición</span>
+    </h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.m1.q">¿Quién prepara la comida?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.m1.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.m2.q">¿Veo la información nutricional?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.m2.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.m3.q">¿Puedo cambiar mis comidas cada semana?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.m3.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.m4.q">¿Hay opciones vegetarianas o más ligeras?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.m4.a"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-category" id="delivery">
+    <h2>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18h14M5 18a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h9l5 5v4a2 2 0 0 1-2 2"/><circle cx="7.5" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg></span>
+      <span data-i18n="faqp.cat.delivery">Entregas</span>
+    </h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.d1.q">¿Puedo elegir a qué hora me llega la comida?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.d1.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.d2.q">¿A dónde entregan?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.d2.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.d3.q">¿Qué pasa si no estoy cuando llega mi pedido?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.d3.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.d4.q">¿Y si mi pedido llega tarde o en mal estado?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.d4.a"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-category" id="account">
+    <h2>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+      <span data-i18n="faqp.cat.account">Tu cuenta</span>
+    </h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.a1.q">¿Está en inglés y tiene modo oscuro?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.a1.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.a2.q">¿Cómo cambio mis datos o mi contraseña?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.a2.a"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span data-i18n="faqp.a3.q">¿Cómo elimino mi cuenta?</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faqp.a3.a"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="help-banner reveal">
+      <div>
+        <h3 data-i18n="faqp.cta.title">¿No encontraste tu respuesta?</h3>
+        <p data-i18n="faqp.cta.text">Pásate por nuestro centro de ayuda o escríbenos por redes. Te respondemos para que dejes tu semana lista sin enredos.</p>
+      </div>
+      <div class="help-banner-actions">
+        <a href="ayuda.html" class="btn btn-pill btn-on-dark" data-i18n="faqp.cta.help">Ir al centro de ayuda</a>
+        <a href="index.html" class="btn btn-pill" data-i18n="faqp.cta.home">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <span class="brand"><img src="assets/logo.png" alt="" /><span><em>Food</em>Heaven</span></span>
+        <p data-i18n="foot.brandtext">Comida casera fresca, planificada para tu semana y entregada a tu puerta.</p>
+        <div class="foot-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 3H21l-6.5 7.4L22 21h-6.7l-4.6-6-5.3 6H2.6l7-7.9L2 3h6.8l4.2 5.5L18.2 3zm-2.3 16h1.6L7.2 5H5.5l10.4 14z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c1.h">Producto</h5>
+        <ul>
+          <li><a href="index.html#how" data-i18n="foot.p1">Cómo funciona</a></li>
+          <li><a href="index.html#menu" data-i18n="foot.p2">Menú</a></li>
+          <li><a href="index.html#plans" data-i18n="foot.p3">Planes</a></li>
+          <li><a href="index.html#plans" data-i18n="foot.p4">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c2.h">Soporte</h5>
+        <ul>
+          <li><a href="faq.html" data-i18n="foot.s1">Preguntas frecuentes</a></li>
+          <li><a href="ayuda.html" data-i18n="foot.s2">Centro de ayuda</a></li>
+          <li><a href="ayuda.html#cocinas" data-i18n="foot.s3">Para cocinas</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c3.h">Legal</h5>
+        <ul>
+          <li><a href="legal.html#privacidad" data-i18n="foot.lg1">Política de privacidad</a></li>
+          <li><a href="legal.html#terminos" data-i18n="foot.lg2">Términos del servicio</a></li>
+          <li><a href="legal.html#cancelaciones" data-i18n="foot.lg3">Cancelaciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 FoodHeaven · <span data-i18n="foot.rights">Todos los derechos reservados.</span></span>
+      <span><strong data-i18n="foot.made">FoodHeaven, desarrollado por VERSS.</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>

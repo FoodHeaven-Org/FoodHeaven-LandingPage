@@ -1,0 +1,124 @@
+:root {
+  --green-300: #6fbf76;
+  --green-400: #53c758;
+  --green-500: #2f9e44;
+  --green-600: #2e7d32;
+  --green-700: #1f6a25;
+  --green-800: #1b5e20;
+  --green-900: #143b18;
+
+  --mustard:   #f2b134;
+  --mustard-2: #f6c662;
+  --coral:     #e26b48;
+  --mint:      #e3f0e4;
+  --mint-dk:   #1b5e20;
+
+  --cream-0:   #ffffff;
+  --cream-1:   #faf8f3;
+  --surface:   #ffffff;
+  --surface-2: #ffffff;
+  --beige-chip:#f1ece1;
+
+  --ink-900: #1f1b14;
+  --ink-700: #3a3329;
+  --ink-500: #6b6253;
+  --ink-400: #9a9182;
+
+  --bg:        var(--cream-1);
+  --surface-1: var(--surface);
+  --surface-l: var(--surface-2);
+  --border:    rgba(31,27,20,.09);
+  --fg:        var(--ink-900);
+  --fg-muted:  var(--ink-500);
+  --brand:     var(--green-600);
+  --brand-2:   var(--green-800);
+  --footer-bg: var(--green-900);
+
+  --shadow-card: 0 4px 20px rgba(31,27,20,.06);
+  --shadow-pop:  0 18px 36px -16px rgba(27,94,32,.32);
+
+  --radius-card: 18px;
+  --radius-pill: 999px;
+
+  --container: 1200px;
+  --font: 'Poppins', sans-serif;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+
+[data-theme="dark"] {
+  --bg:        #15181a;
+  --surface-1: #1f2324;
+  --surface-l: #272b2c;
+  --beige-chip:#272b2c;
+  --border:    rgba(233,234,228,.09);
+  --fg:        #e9eae4;
+  --fg-muted:  #aeb1a8;
+  --brand:     #4ea957;
+  --brand-2:   #6fbf76;
+  --mint:      #1e2a20;
+  --mint-dk:   #bfe3c6;
+  --cream-0:   #1f2324;
+  --footer-bg: #101512;
+  --shadow-card: 0 4px 20px rgba(0,0,0,.45);
+  --shadow-pop:  0 18px 36px -16px rgba(0,0,0,.6);
+}
+
+*,*::before,*::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html,body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color .35s var(--ease), color .35s var(--ease);
+}
+a { color: inherit; text-decoration: none; }
+img,svg { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; border: 0; background: transparent; color: inherit; }
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; border-radius: 6px; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 22px; }
+
+.section { margin-bottom: 64px; }
+.section-head { text-align: center; max-width: 640px; margin: 0 auto 34px; }
+.section-eyebrow {
+  display: inline-block; font-weight: 800; font-size: 0.72rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--brand);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-weight: 900; font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.05;
+  letter-spacing: -0.025em; text-transform: uppercase; margin: 0 0 12px; color: var(--fg);
+}
+.section-lead { color: var(--fg-muted); font-size: 1rem; line-height: 1.6; margin: 0; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 28px; border-radius: var(--radius-pill);
+  font-weight: 700; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;
+  border: 2px solid var(--fg); color: var(--fg); background: transparent;
+  transition: background .2s, color .2s, transform .2s, box-shadow .2s, border-color .2s;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-solid { background: var(--brand); color: #fff; border-color: var(--brand); }
+.btn-solid:hover { background: var(--brand-2); border-color: var(--brand-2); color: #fff; }
+.btn-outline { border-color: var(--brand); color: var(--brand); }
+.btn-outline:hover { background: var(--brand); color: #fff; }
+.btn-pill { border-radius: var(--radius-pill); padding: 13px 28px; }
+.btn-pill.btn-light { background: var(--surface-1); border-color: var(--border); color: var(--fg); }
+.btn-pill.btn-light:hover { background: var(--cream-1); }
+.btn-pill.btn-brand { background: var(--brand); color: #fff; border-color: var(--brand); }
+.btn-pill.btn-brand:hover { background: var(--brand-2); border-color: var(--brand-2); }
+.btn-pill.btn-on-dark { background: #fff; color: var(--green-700); border-color: #fff; }
+.btn-pill.btn-on-dark:hover { background: var(--mustard); color: var(--ink-900); border-color: var(--mustard); }
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

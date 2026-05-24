@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title data-i18n="meta.title">FoodHeaven</title>
+<meta name="description" data-i18n="meta.desc" content="Planifica tu semana, elige tus comidas y recibe platos caseros recién hechos en tu casa, trabajo o universidad." />
+<meta property="og:title" content="FoodHeaven" />
+<meta property="og:description" content="Planifica tu semana, elige tus comidas y recibe platos caseros recién hechos." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/logo.png" />
+<meta name="theme-color" content="#2e7d32" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/base.css" />
+<link rel="stylesheet" href="styles/layout.css" />
+<link rel="stylesheet" href="styles/landing.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" aria-label="FoodHeaven">
+      <img src="assets/logo.png" alt="" />
+      <span><em>Food</em>Heaven</span>
+    </a>
+
+    <nav class="nav-main" aria-label="Principal">
+      <a href="#home" data-i18n="nav.home">Inicio</a>
+      <a href="#how" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#menu" data-i18n="nav.menu">Menú</a>
+      <a href="#plans" data-i18n="nav.plans">Planes</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="tools-wrap">
+      <div class="tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <div class="lang-flag" role="group" aria-label="Idioma">
+          <button data-lang="en" aria-pressed="false" aria-label="English">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <clipPath id="uk-c"><rect width="60" height="36"/></clipPath>
+                <rect width="60" height="36" fill="#012169"/>
+                <g clip-path="url(#uk-c)">
+                  <path d="M0 0 L60 36 M60 0 L0 36" stroke="#fff" stroke-width="6"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#fff" stroke-width="10"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#C8102E" stroke-width="6"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+          <button data-lang="es" aria-pressed="true" aria-label="Español">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <rect width="60" height="36" fill="#AA151B"/>
+                <rect y="9" width="60" height="18" fill="#F1BF00"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#home" data-i18n="nav.home">Inicio</a>
+  <a href="#how" data-i18n="nav.how">Cómo funciona</a>
+  <a href="#menu" data-i18n="nav.menu">Menú</a>
+  <a href="#plans" data-i18n="nav.plans">Planes</a>
+  <a href="#reviews" data-i18n="nav.reviews">Opiniones</a>
+  <a href="#contact" data-i18n="nav.contact">Contacto</a>
+</div>
+
+<main class="container">
+
+  <section class="section" id="home">
+    <div class="hero reveal">
+      <div class="hero__main">
+        <div class="hero__text">
+          <h1>
+            <span data-i18n="hero.h1_a">Come bien,</span>
+            <span class="accent" data-i18n="hero.h1_b">sin pensar de más.</span>
+          </h1>
+          <p data-i18n="hero.sub">Planifica las comidas de tu semana, revisa sus calorías y nutrientes, y recibe platos caseros recién hechos en tu casa, trabajo o universidad. Tú eliges qué comer y a qué hora te llega.</p>
+          <div class="hero__cta">
+            <a href="#plans" class="btn btn-solid" data-i18n="hero.cta1">Empieza ahora</a>
+            <a href="#how" class="btn btn-outline" data-i18n="hero.cta2">Ver cómo funciona</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="assets/PaquetesFoodHeaven.png" alt="Paquetes de comida FoodHeaven listos para entregar" />
+        </div>
+      </div>
+
+      <div class="hero__strip">
+        <div class="hero__hl">
+          <span class="hero__hl-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="hero.hl1.t">Planifica tu semana</h3>
+            <p data-i18n="hero.hl1.d">Desayuno, almuerzo y cena en un calendario simple.</p>
+          </div>
+        </div>
+        <div class="hero__hl">
+          <span class="hero__hl-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-5"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="hero.hl2.t">Nutrición a la vista</h3>
+            <p data-i18n="hero.hl2.d">Calorías y nutrientes de cada plato, con totales por día.</p>
+          </div>
+        </div>
+        <div class="hero__hl">
+          <span class="hero__hl-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18h14M5 18a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h9l5 5v4a2 2 0 0 1-2 2"/><circle cx="7.5" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="hero.hl3.t">Recíbelo a tu hora</h3>
+            <p data-i18n="hero.hl3.d">Eliges la franja y te lo llevamos a tu puerta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="pill-header">
+      <span data-i18n="pill.purpose">Hecho con propósito</span>
+      <a href="#menu" class="right" data-i18n="pill.see">Ver el menú</a>
+    </div>
+
+    <div class="purpose-top">
+      <div class="purpose-features">
+        <div class="feature-card reveal">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="f.1.t">Planificación<br/>semanal</h4>
+            <p data-i18n="f.1.d">Arma tu semana con desayuno, almuerzo y cena en un calendario simple y ordenado.</p>
+          </div>
+        </div>
+        <div class="feature-card reveal">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-5"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="f.2.t">Nutrición<br/>a la vista</h4>
+            <p data-i18n="f.2.d">Cada plato muestra sus calorías, proteínas, carbohidratos y grasas, con totales por día.</p>
+          </div>
+        </div>
+        <div class="feature-card reveal">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 1 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="f.3.t">Comida<br/>casera</h4>
+            <p data-i18n="f.3.d">Platos caseros preparados al momento con ingredientes frescos y de calidad.</p>
+          </div>
+        </div>
+        <div class="feature-card reveal">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="f.4.t">Entrega a<br/>tu horario</h4>
+            <p data-i18n="f.4.d">Eliges la franja en la que quieres recibir cada comida. Nosotros nos encargamos del resto.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="purpose-center reveal">
+        <img src="https://i.ytimg.com/vi/ErRIA_Owc58/maxresdefault.jpg"
+             alt="Lomo saltado peruano recién preparado"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&q=80&w=1100';"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="how.eyebrow">Así de fácil</span>
+      <h2 class="section-title" data-i18n="how.title">Cómo funciona FoodHeaven</h2>
+      <p class="section-lead" data-i18n="how.lead">De la planificación a tu mesa en cuatro pasos. Sin estrés y sin perder tiempo.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <span class="step-num">1</span>
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </span>
+        <h4 data-i18n="how.1.t">Elige tu plan</h4>
+        <p data-i18n="how.1.d">Una, dos o tres comidas al día. El que mejor calce con tu rutina.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">2</span>
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </span>
+        <h4 data-i18n="how.2.t">Arma tu semana</h4>
+        <p data-i18n="how.2.d">Escoge desayuno, almuerzo y cena para cada día desde el menú.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">3</span>
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </span>
+        <h4 data-i18n="how.3.t">Define tu horario</h4>
+        <p data-i18n="how.3.d">Indica la franja en la que quieres recibir cada comida.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">4</span>
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18h14M5 18a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h9l5 5v4a2 2 0 0 1-2 2"/><circle cx="7.5" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg>
+        </span>
+        <h4 data-i18n="how.4.t">Recibe y disfruta</h4>
+        <p data-i18n="how.4.d">Preparamos tus platos frescos y te los llevamos listos para disfrutar.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="menu">
+    <div class="top-pick-header" data-i18n="picks.title">Los más pedidos esta semana</div>
+    <div class="picks-grid">
+
+      <article class="pick-card reveal">
+        <span class="tag tag-brand" data-i18n="picks.tag.best">Más pedido</span>
+        <img class="dish" alt="Lomo saltado clásico"
+             src="https://i.ytimg.com/vi/ErRIA_Owc58/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&q=80&w=700';"/>
+        <h4 data-i18n="m.lomo.t">Lomo saltado clásico</h4>
+        <div class="pick-macros">
+          <div class="m"><small>KCAL</small><b>760</b></div>
+          <div class="m"><small data-i18n="mc.p">PROT</small><b>40g</b></div>
+          <div class="m"><small data-i18n="mc.c">CARB</small><b>88g</b></div>
+          <div class="m"><small data-i18n="mc.f">GRA</small><b>28g</b></div>
+        </div>
+        <div class="footer-row">
+          <a href="#plans" class="buy"><span data-i18n="picks.buy">Pedir</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="pick-card reveal">
+        <span class="tag tag-mustard" data-i18n="picks.tag.home">Sabor de casa</span>
+        <img class="dish" alt="Ají de gallina con arroz"
+             src="https://osterstatic.reciperm.com/webp/10773.webp"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=700';"/>
+        <h4 data-i18n="m.aji.t">Ají de gallina</h4>
+        <div class="pick-macros">
+          <div class="m"><small>KCAL</small><b>680</b></div>
+          <div class="m"><small data-i18n="mc.p">PROT</small><b>33g</b></div>
+          <div class="m"><small data-i18n="mc.c">CARB</small><b>72g</b></div>
+          <div class="m"><small data-i18n="mc.f">GRA</small><b>27g</b></div>
+        </div>
+        <div class="footer-row">
+          <a href="#plans" class="buy"><span data-i18n="picks.buy">Pedir</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="pick-card reveal">
+        <span class="tag tag-light" data-i18n="picks.tag.veg">Vegetariano</span>
+        <img class="dish" alt="Bowl vegetariano con garbanzos y verduras"
+             src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=700"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=700';"/>
+        <h4 data-i18n="m.bowl.t">Bowl vegetariano</h4>
+        <div class="pick-macros">
+          <div class="m"><small>KCAL</small><b>560</b></div>
+          <div class="m"><small data-i18n="mc.p">PROT</small><b>22g</b></div>
+          <div class="m"><small data-i18n="mc.c">CARB</small><b>82g</b></div>
+          <div class="m"><small data-i18n="mc.f">GRA</small><b>15g</b></div>
+        </div>
+        <div class="footer-row">
+          <a href="#plans" class="buy"><span data-i18n="picks.buy">Pedir</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="dual">
+      <div class="dual-cta reveal">
+        <h2 data-i18n="dual.h">Llega fresco,<br/>a tu puerta</h2>
+        <p data-i18n="dual.p">¿Una semana sin tiempo? Planifica una vez y nosotros llevamos tu comida lista a casa, al trabajo o a la universidad.</p>
+        <ul class="dual-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="dual.l1">Tú eliges el día y la hora de entrega</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="dual.l2">Platos preparados el mismo día</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="dual.l3">Paga con tarjeta, Yape o al recibir</span>
+          </li>
+        </ul>
+        <a href="#plans" class="btn btn-pill" data-i18n="dual.cta">Empieza tu plan</a>
+        <span class="deco" aria-hidden="true"><span></span><span></span></span>
+      </div>
+      <div class="dual-img reveal">
+        <img src="https://images.unsplash.com/photo-1576866209830-589e1bfbaa4d?auto=format&fit=crop&q=80&w=900"
+             alt="Comida fresca empacada lista para entregar"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=900';"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plans">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="price.eyebrow">Planes simples</span>
+      <h2 class="section-title" data-i18n="price.title">Elige tu plan mensual</h2>
+      <p class="section-lead" data-i18n="price.lead">Sin letras chiquitas. Cambia o cancela tu plan cuando quieras desde tu cuenta.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="price-card reveal">
+        <h3 class="plan-name" data-i18n="price.1.name">Essential</h3>
+        <p class="plan-meals" data-i18n="price.1.meals">1 comida al día</p>
+        <div class="plan-price"><b>S/ 149</b><span data-i18n="price.permonth">/ mes</span></div>
+        <p class="plan-note" data-i18n="price.note">Precio base. Puede variar según los platos que elijas.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.1.f1">Elige desayuno, almuerzo o cena</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.1.f2">Calendario semanal de comidas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.1.f3">Calorías y nutrientes de cada plato</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.1.f4">Entrega en la franja que elijas</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="price.cta">Empezar</a>
+      </article>
+
+      <article class="price-card featured reveal">
+        <span class="price-tag" data-i18n="price.popular">Más elegido</span>
+        <h3 class="plan-name" data-i18n="price.3.name">Full</h3>
+        <p class="plan-meals" data-i18n="price.3.meals">3 comidas al día</p>
+        <div class="plan-price"><b>S/ 349</b><span data-i18n="price.permonth">/ mes</span></div>
+        <p class="plan-note" data-i18n="price.note">Precio base. Puede variar según los platos que elijas.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.3.f1">Desayuno, almuerzo y cena cubiertos</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.3.f2">Todo lo del plan Balance</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.3.f3">La semana completa, sin pensar</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.3.f4">Atención al cliente prioritaria</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-solid" data-i18n="price.cta">Empezar</a>
+      </article>
+
+      <article class="price-card reveal">
+        <h3 class="plan-name" data-i18n="price.2.name">Balance</h3>
+        <p class="plan-meals" data-i18n="price.2.meals">2 comidas al día</p>
+        <div class="plan-price"><b>S/ 249</b><span data-i18n="price.permonth">/ mes</span></div>
+        <p class="plan-note" data-i18n="price.note">Precio base. Puede variar según los platos que elijas.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.2.f1">Combina las dos comidas que prefieras</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.2.f2">Todo lo del plan Essential</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.2.f3">Totales de calorías por día y semana</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.2.f4">Cambia tus comidas cada semana</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="price.cta">Empezar</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="testi-head" data-i18n="testi.title">Lo que dicen nuestros clientes</div>
+    <div class="testi-body reveal">
+      <button class="testi-arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="avatar">CR</div>
+          <h5 data-i18n="t.1.n">Camila R.</h5>
+          <p class="role" data-i18n="t.1.r">Profesional ocupada</p>
+          <p data-i18n="t.1.q">“Antes me angustiaba cada domingo pensando en los almuerzos. Ahora planifico toda la semana en diez minutos y me olvido.”</p>
+          <div class="testi-stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="avatar">DA</div>
+          <h5 data-i18n="t.2.n">Diego y Ana</h5>
+          <p class="role" data-i18n="t.2.r">Familia con hijos</p>
+          <p data-i18n="t.2.q">“Con dos hijos, las cenas eran un caos. FoodHeaven las convirtió en algo que de verdad esperamos con ganas.”</p>
+          <div class="testi-stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="avatar">SM</div>
+          <h5 data-i18n="t.3.n">Sebastián M.</h5>
+          <p class="role" data-i18n="t.3.r">Trabaja desde casa</p>
+          <p data-i18n="t.3.q">“Ver las calorías de cada plato me devolvió una rutina. Ya no me salto comidas — todo está listo.”</p>
+          <div class="testi-stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <button class="testi-arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="excl-cta reveal">
+      <span class="deco-l" aria-hidden="true"></span>
+      <span class="deco-r" aria-hidden="true"></span>
+      <h2 data-i18n="excl.h">Empieza con FoodHeaven hoy</h2>
+      <p data-i18n="excl.p">Crea tu cuenta gratis, arma tu primera semana y descubre lo fácil que es comer bien sin pensar de más.</p>
+      <div class="excl-actions">
+        <a href="#contact" class="btn btn-pill btn-on-dark" data-i18n="excl.cta1">Crear mi cuenta</a>
+        <a href="#plans" class="btn btn-pill" style="border:2px solid #fff;color:#fff;background:transparent;" data-i18n="excl.cta2">Ver los planes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="contact.eyebrow">Contacto</span>
+      <h2 class="section-title" data-i18n="contact.title">Escríbenos</h2>
+      <p class="section-lead" data-i18n="contact.lead">¿Tienes una duda o quieres empezar? Déjanos un mensaje y te respondemos pronto.</p>
+    </div>
+
+    <div class="contact-wrap reveal">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="contact-grid">
+          <div class="contact-field">
+            <label for="cf-name" data-i18n="contact.name">Nombre</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" data-i18n-ph="contact.namePh" placeholder="Tu nombre" required />
+          </div>
+          <div class="contact-field">
+            <label for="cf-email" data-i18n="contact.emailLabel">Correo electrónico</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" data-i18n-ph="contact.emailPh" placeholder="tu@correo.com" required />
+          </div>
+          <div class="contact-field contact-field--full">
+            <label for="cf-topic" data-i18n="contact.topic">Asunto</label>
+            <input id="cf-topic" name="topic" type="text" data-i18n-ph="contact.topicPh" placeholder="¿Sobre qué nos escribes?" />
+          </div>
+          <div class="contact-field contact-field--full">
+            <label for="cf-msg" data-i18n="contact.message">Mensaje</label>
+            <textarea id="cf-msg" name="message" rows="5" data-i18n-ph="contact.msgPh" placeholder="Cuéntanos en qué te ayudamos" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-solid contact-submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <span data-i18n="contact.send">Enviar mensaje</span>
+        </button>
+        <p class="contact-success" id="contactSuccess" role="status" hidden data-i18n="contact.success">Gracias por escribirnos. Te responderemos muy pronto.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <span class="brand"><img src="assets/logo.png" alt="" /><span><em>Food</em>Heaven</span></span>
+        <p data-i18n="foot.brandtext">Comida casera fresca, planificada para tu semana y entregada a tu puerta.</p>
+        <div class="foot-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 3H21l-6.5 7.4L22 21h-6.7l-4.6-6-5.3 6H2.6l7-7.9L2 3h6.8l4.2 5.5L18.2 3zm-2.3 16h1.6L7.2 5H5.5l10.4 14z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h5 data-i18n="foot.c1.h">Producto</h5>
+        <ul>
+          <li><a href="#how" data-i18n="foot.p1">Cómo funciona</a></li>
+          <li><a href="#menu" data-i18n="foot.p2">Menú</a></li>
+          <li><a href="#plans" data-i18n="foot.p3">Planes</a></li>
+          <li><a href="#plans" data-i18n="foot.p4">Crear cuenta</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h5 data-i18n="foot.c2.h">Soporte</h5>
+        <ul>
+          <li><a href="faq.html" data-i18n="foot.s1">Preguntas frecuentes</a></li>
+          <li><a href="ayuda.html" data-i18n="foot.s2">Centro de ayuda</a></li>
+          <li><a href="ayuda.html#cocinas" data-i18n="foot.s3">Para cocinas</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h5 data-i18n="foot.c3.h">Legal</h5>
+        <ul>
+          <li><a href="legal.html#privacidad" data-i18n="foot.lg1">Política de privacidad</a></li>
+          <li><a href="legal.html#terminos" data-i18n="foot.lg2">Términos del servicio</a></li>
+          <li><a href="legal.html#cancelaciones" data-i18n="foot.lg3">Cancelaciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 FoodHeaven · <span data-i18n="foot.rights">Todos los derechos reservados.</span></span>
+      <span><strong data-i18n="foot.made">FoodHeaven, desarrollado por VERSS.</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

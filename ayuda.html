@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title data-i18n="helpp.meta.title">Centro de ayuda — FoodHeaven</title>
+<meta name="description" data-i18n="helpp.meta.desc" content="Guías rápidas para crear tu cuenta, armar tu semana, elegir tus horarios de entrega y manejar tu plan en FoodHeaven." />
+<meta name="theme-color" content="#1f7a26" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/base.css" />
+<link rel="stylesheet" href="styles/layout.css" />
+<link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="FoodHeaven">
+      <img src="assets/logo.png" alt="" />
+      <span><em>Food</em>Heaven</span>
+    </a>
+
+    <nav class="nav-main" aria-label="Principal">
+      <a href="index.html#home" data-i18n="nav.home">Inicio</a>
+      <a href="index.html#how" data-i18n="nav.how">Cómo funciona</a>
+      <a href="index.html#menu" data-i18n="nav.menu">Menú</a>
+      <a href="index.html#plans" data-i18n="nav.plans">Planes</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="tools-wrap">
+      <div class="tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <div class="lang-flag" role="group" aria-label="Idioma">
+          <button data-lang="en" aria-pressed="false" aria-label="English">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <clipPath id="uk-c"><rect width="60" height="36"/></clipPath>
+                <rect width="60" height="36" fill="#012169"/>
+                <g clip-path="url(#uk-c)">
+                  <path d="M0 0 L60 36 M60 0 L0 36" stroke="#fff" stroke-width="6"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#fff" stroke-width="10"/>
+                  <path d="M30 0 V36 M0 18 H60" stroke="#C8102E" stroke-width="6"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+          <button data-lang="es" aria-pressed="true" aria-label="Español">
+            <span class="flag-svg" aria-hidden="true">
+              <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%">
+                <rect width="60" height="36" fill="#AA151B"/>
+                <rect y="9" width="60" height="18" fill="#F1BF00"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="index.html#home" data-i18n="nav.home">Inicio</a>
+  <a href="index.html#how" data-i18n="nav.how">Cómo funciona</a>
+  <a href="index.html#menu" data-i18n="nav.menu">Menú</a>
+  <a href="index.html#plans" data-i18n="nav.plans">Planes</a>
+  <a href="faq.html" data-i18n="nav.faq">Preguntas</a>
+  <a href="ayuda.html" data-i18n="foot.s2">Centro de ayuda</a>
+  <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+</div>
+
+<main class="container subpage">
+
+  <section class="subhero subhero--image" style="--subhero-img:url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=1400')">
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span data-i18n="helpp.crumb">Centro de ayuda</span>
+    </div>
+    <h1 data-i18n="helpp.title">Centro de ayuda</h1>
+    <p data-i18n="helpp.lead">Aquí tienes guías cortas y claras para sacarle el máximo a FoodHeaven, paso a paso.</p>
+  </section>
+
+  <section class="section">
+    <div class="help-grid">
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <h3 data-i18n="helpp.c1.t">Primeros pasos</h3>
+        <ol data-i18n="helpp.c1.l"></ol>
+      </article>
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+        <h3 data-i18n="helpp.c2.t">Arma tu semana</h3>
+        <ol data-i18n="helpp.c2.l"></ol>
+      </article>
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3 data-i18n="helpp.c3.t">Horarios de entrega</h3>
+        <ul data-i18n="helpp.c3.l"></ul>
+      </article>
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+        <h3 data-i18n="helpp.c4.t">Planes y pagos</h3>
+        <ul data-i18n="helpp.c4.l"></ul>
+      </article>
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h3 data-i18n="helpp.c5.t">Tu cuenta y seguridad</h3>
+        <ul data-i18n="helpp.c5.l"></ul>
+      </article>
+      <article class="help-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+        <h3 data-i18n="helpp.c6.t">Idioma y apariencia</h3>
+        <ul data-i18n="helpp.c6.l"></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="help-media reveal">
+      <div class="help-media-img">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=900"
+             alt="Persona planificando sus comidas de la semana"
+             onerror="this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=900';this.onerror=null;"/>
+      </div>
+      <div class="help-media-text">
+        <h3 data-i18n="helpp.media.t">Todo desde un calendario simple</h3>
+        <p data-i18n="helpp.media.p">Tu semana vive en un solo lugar. Ves de un vistazo qué comerás cada día, cuántas calorías suma y a qué hora llegará cada plato. Cambiar algo toma segundos, y el calendario se actualiza solo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cocinas">
+    <div class="cocinas-band reveal">
+      <div class="cocinas-img">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=900"
+             alt="Cocina local preparando platos frescos"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=900';"/>
+      </div>
+      <div class="cocinas-text">
+        <h3 data-i18n="helpp.cocinas.t">¿Tienes una cocina o restaurante?</h3>
+        <p data-i18n="helpp.cocinas.p">Si cocinas con cariño y quieres llegar a más personas en tu ciudad, nos encantaría sumarte a la red de cocinas de FoodHeaven.</p>
+        <ul data-i18n="helpp.cocinas.l"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="help-banner reveal">
+      <div>
+        <h3 data-i18n="helpp.banner.t">¿Sigues con dudas?</h3>
+        <p data-i18n="helpp.banner.p">Revisa las preguntas frecuentes o escríbenos por nuestras redes. Estamos para ayudarte a comer mejor cada semana.</p>
+      </div>
+      <div class="help-banner-actions">
+        <a href="index.html#contact" class="btn btn-pill btn-on-dark" data-i18n="helpp.banner.contact">Escríbenos</a>
+        <a href="faq.html" class="btn btn-pill" data-i18n="helpp.banner.faq">Ver preguntas frecuentes</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <span class="brand"><img src="assets/logo.png" alt="" /><span><em>Food</em>Heaven</span></span>
+        <p data-i18n="foot.brandtext">Comida casera fresca, planificada para tu semana y entregada a tu puerta.</p>
+        <div class="foot-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 3H21l-6.5 7.4L22 21h-6.7l-4.6-6-5.3 6H2.6l7-7.9L2 3h6.8l4.2 5.5L18.2 3zm-2.3 16h1.6L7.2 5H5.5l10.4 14z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c1.h">Producto</h5>
+        <ul>
+          <li><a href="index.html#how" data-i18n="foot.p1">Cómo funciona</a></li>
+          <li><a href="index.html#menu" data-i18n="foot.p2">Menú</a></li>
+          <li><a href="index.html#plans" data-i18n="foot.p3">Planes</a></li>
+          <li><a href="index.html#plans" data-i18n="foot.p4">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c2.h">Soporte</h5>
+        <ul>
+          <li><a href="faq.html" data-i18n="foot.s1">Preguntas frecuentes</a></li>
+          <li><a href="ayuda.html" data-i18n="foot.s2">Centro de ayuda</a></li>
+          <li><a href="ayuda.html#cocinas" data-i18n="foot.s3">Para cocinas</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="foot.c3.h">Legal</h5>
+        <ul>
+          <li><a href="legal.html#privacidad" data-i18n="foot.lg1">Política de privacidad</a></li>
+          <li><a href="legal.html#terminos" data-i18n="foot.lg2">Términos del servicio</a></li>
+          <li><a href="legal.html#cancelaciones" data-i18n="foot.lg3">Cancelaciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 FoodHeaven · <span data-i18n="foot.rights">Todos los derechos reservados.</span></span>
+      <span><strong data-i18n="foot.made">FoodHeaven, desarrollado por VERSS.</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>
